@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="303.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ControllerClient">
+    <children>
+        <Button fx:id="buttonGo" layoutX="204.0" layoutY="133.0" mnemonicParsing="false" onAction="#buttonActSend" style="-fx-background-color: #FFFFFF;" text="Отправить" textFill="#800003" visible="false" />
+        <TextField fx:id="textFieldPort" layoutX="31.0" layoutY="44.0" promptText="Server Port" />
+      <Button fx:id="buttonConnect" layoutX="212.0" layoutY="44.0" mnemonicParsing="false" onAction="#buttonActConnect" style="-fx-background-color: #FFFFFF;" text="Connect" textFill="#800003" />
+      <TextField fx:id="textFieldSend" layoutX="31.0" layoutY="133.0" promptText="Text" visible="false" />
+      <Text fx:id="textSend" layoutX="31.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите текст для отправки" visible="false" wrappingWidth="163.18634033203125" />
+      <Text fx:id="textPort" layoutX="31.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите порт сервера" />
+      <Button fx:id="buttonExit" layoutX="126.0" layoutY="181.0" mnemonicParsing="false" onAction="#buttonActExit" text="Выход" textFill="#800003" />
+    </children>
+</Pane>
